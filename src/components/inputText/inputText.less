@@ -1,0 +1,67 @@
+@import url("../../static/css/pub.less");
+.cit-item {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  display: flex;
+}
+.cit-item:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #e7e8ea;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  z-index: 10;
+}
+.cit-item-title{
+  min-width: 1.8rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: .34rem;
+}
+.cit-input-box {
+  width: 100%;
+  display: flex;
+}
+.cit-text {
+  width: 100%;
+  height: 1rem;
+  padding: 0.2rem 0;
+  font-size: 0.34rem;
+}
+.cit-text::placeholder {
+  color: #c7c8ca;
+}
+.cit-text-clear {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 21px;
+  color: #c7c8ca;
+}
+.cit-text-clear::before {
+  font-family: "iconfont";
+  content: "\e820";
+}
+
+.cit-text-select {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  color: #c7c8ca;
+  margin-left: .2rem;
+}
+.cit-text-select::before {
+  font-family: "iconfont";
+  content: "\e7ae";
+}

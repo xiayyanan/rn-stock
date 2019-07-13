@@ -1,0 +1,33 @@
+.tencent_tas {
+  background: #fff;
+  position: relative;
+  margin: 0.3rem;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  padding: .6rem;
+}
+.tencent_tas::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: #e7e8ea 1px solid;
+  border-radius: 0.2rem;
+  transform: scale(0.5);
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  box-sizing: border-box;
+}
+
+.tencent_tas .title{
+    text-align: center;
+    font-size: .32rem;
+}
+.tencent_tas .imgbox{
+    padding: .2rem 0;
+}
+.tencent_tas .dsp{
+    font-size: .24rem;
+    text-align: center;
+}

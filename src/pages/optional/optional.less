@@ -1,0 +1,83 @@
+@import url("../../static/css/pub.less");
+.optional-quotes {
+  padding: 0.24rem 0;
+  margin-bottom: 0.24rem;
+  .f-box();
+}
+.optional-stock {
+  background: #fff;
+}
+.optional-stock .tap {
+  display: flex;
+  padding: 0.24rem;
+}
+.optional-stock .tap::after {
+  .bbline();
+}
+.optional-stock .stock {
+  width: 40%;
+}
+.optional-stock .name {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.32rem;
+}
+.optional-stock .stocks {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 0.1rem 0 0;
+  font-size: 0.24rem;
+  line-height: 1;
+  padding: 1px 0.06rem;
+  background: #fd0626;
+  border-radius: 0.05rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.optional-stock .code {
+  height: 0.32rem;
+  line-height: 0.32rem;
+  font-size: 0.24rem;
+  color: #ccc;
+}
+.optional-stock .price {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.32rem;
+}
+.optional-stock .quotesp {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-size: 0.32rem;
+}
+
+.optional-title {
+  padding: 0.24rem;
+  background: #fff;
+  display: flex;
+  position: relative;
+}
+.optional-title::after {
+  .bbline();
+}
+.optional-title .item {
+  font-size: 0.28rem;
+  line-height: 0.48rem;
+}
+.optional-title .item:nth-child(1) {
+  width: 40%;
+}
+.optional-title .item:nth-child(2) {
+  width: 30%;
+  text-align: center;
+}
+.optional-title .item:nth-child(3) {
+  width: 30%;
+  text-align: right;
+}

@@ -1,0 +1,123 @@
+.benefit-bg {
+  padding: 0.4rem 0.4rem 0.6rem;
+  background: linear-gradient(#fd0626, #f7f8fa);
+}
+.benefit {
+  padding: 0.8rem 0.4rem 0.4rem;
+  background: #fff;
+  border-radius: 0.16rem;
+  text-align: center;
+  box-shadow: 0px 1px 0.4rem rgba(59, 66, 87, 0.15);
+}
+.benefit .title {
+  font-size: 0.28rem;
+}
+.benefit .money {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
+.benefit .yesterday {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+}
+.benefit .yesterday-bg {
+  background: #f1f1f1;
+  border-radius: 0.48rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  padding: 0 0.3rem;
+  font-size: 0.28rem;
+}
+.benefit .yesterday-bg .value {
+  font-size: 0.32rem;
+  padding: 0 2px;
+}
+
+.account {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  margin-top: 0.3rem;
+}
+
+.account .item {
+  width: 50%;
+  padding: 0.3rem 0.24rem;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+
+.account .name {
+  font-size: 0.28rem;
+  color: #92999d;
+  margin-top: 0.2rem;
+}
+
+.account .value {
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+
+.account .item:nth-child(1n):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 1px;
+  background: #e5e8ea;
+  transform: scaleX(0.5);
+}
+
+.benefitList {
+  padding: 0.2rem 0.4rem;
+}
+.benefitList .item {
+  height: 1.2rem;
+  position: relative;
+  background: #fff;
+  border-radius: 0.15rem;
+  display: flex;
+  padding: 0.24rem 0.3rem 0.24rem 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.benefitList .item::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: #e7e8ea 1px solid;
+  border-radius: 0.15rem;
+  transform: scale(0.5);
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  box-sizing: border-box;
+}
+.benefitList .item .name {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.34rem;
+  z-index: 2;
+  width: 100%;
+}
+
+.benefitList .item .value {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.48rem;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.benefitList .item .unit {
+  height: 0.72rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  z-index: 2;
+  flex-shrink: 0;
+  margin-left: 2px;
+  color: #62666d;
+}

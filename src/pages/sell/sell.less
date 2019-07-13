@@ -1,0 +1,124 @@
+@import url("../../static/css/pub.less");
+.sell-count{
+    background: #fff;
+    display: flex;
+    padding: .3rem 0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 1rem rgba(59,66,87,.15);
+}
+.sell-count .item{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.sell-count .item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-right:#d7d8da 1px dotted;
+    transform: scaleX(.5); 
+}
+.sell-count .item:last-child::after{
+    display: none;
+}
+.sell-count .name{
+    font-size: .3rem;
+    line-height: .36rem;
+}
+.sell-count .value{
+    font-size: .4rem;
+    line-height: .48rem;
+    margin-top: .12rem;
+}
+
+.sell-order .item{
+    background: #fff;
+    padding: .24rem;
+    position: relative;
+}
+.sell-order .item::after{
+    .bbline();
+}
+.sell-order .hd{
+    display: flex;
+    justify-content: space-between; 
+}
+.sell-order .stock{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .08rem 0;
+}
+
+.sell-order .name{
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .36rem;
+}
+.sell-order .code{
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .24rem;
+    color: #999;
+    text-transform: uppercase; 
+}
+.sell-order .counts{
+    width: 40%;
+}
+.sell-order .price{
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .26rem;
+    color: #666;
+}
+.sell-order .amount{
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .24rem;
+    color: #999;
+}
+
+.sell-order .loss{
+    width: 25%;
+    text-align: right;
+    display: flex;
+    text-align: right;
+    font-size: .36rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sell-order .btn-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .24rem;
+}
+.sell-order .btn-box .btns{
+    width: 2rem;
+    height: .6rem;
+    font-size: .26rem;
+    line-height: .6rem;
+    color: #3b4257;
+}
+
+.sell-detail{
+    padding: .24rem;
+}
+.sell-detail .item{
+    height: 1rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .28rem;
+    position: relative;
+}
+.sell-detail .item::after{
+    .bbline();
+}
+.sell-detail .item:last-child::after{
+    display: none;
+}

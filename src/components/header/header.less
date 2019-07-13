@@ -1,0 +1,90 @@
+.rnui-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	height: 44px;
+	background: #fff;
+	display: flex;
+}
+.rnui-header:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #e1e3ea;
+	transform: scaleY(.5);
+}
+.rnui-header-noline::after{
+	display: none;
+}
+.rnui-header-title {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	font-size: .34rem;
+	text-align: center;
+	font-weight:bold ;
+}
+
+.rnui-header-back {
+	width: 34px;
+	height: 44px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: "iconfont";
+	font-size: 24px;
+	text-align: center;
+	line-height: 44px;
+}
+.rnui-header-back:before{
+	content: "\e7c4";
+}
+
+.rnui-header-search{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-family: "iconfont";
+    font-size: 21px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.rnui-header-search::before{
+    content: '\e821'
+}
+
+.edit-text{
+	position: absolute;
+	right: 10px;
+	height: 44px;
+	line-height: 44px;
+	display: block;
+	font-size: .28rem;
+}
+
+.rnui-header-red{
+    background: #fd0626;
+}
+.rnui-header-red::after{
+    display: none;
+}
+.rnui-header-transparency{
+	background: rgba(253,6,38,0)
+}
+.rnui-header-transparency::after{
+	display: none;
+}
+.rnui-header-red .rnui-header-title,
+.rnui-header-red .rnui-header-back,
+.rnui-header-transparency .rnui-header-title,
+.rnui-header-transparency .rnui-header-back{
+	color: #fff;
+}

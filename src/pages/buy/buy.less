@@ -1,0 +1,207 @@
+@import url("../../static/css/pub.less");
+.buy-menu{
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    top: 44px;
+    background: #fd0626;
+    display: flex;
+    z-index: 99;
+}
+.buy-menu~.rnui-content{
+    padding-top: 88px !important;
+}
+
+.buy-menu .item{
+    width: 33.33%;
+    font-size: 0;
+    text-align: center;
+}
+
+.buy-menu .tap{
+    font-size: .3rem;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color:rgba(255,255,255,.75);
+}
+.buy-menu .active .tap{
+    color: #fff;
+}
+
+.buy-menu .active .tap::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    border-bottom: #f90 4px solid;
+    border-radius:3px; 
+}
+
+.buy-stock{
+    display: flex;
+    justify-content: space-between;
+    padding: .24rem;
+    position: relative;
+}
+.buy-stock::after{
+    .bbline();
+    left: .24rem;
+    right: .24rem;
+}
+.buy-stock .name{
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .36rem;
+    margin-bottom: .1rem;
+}
+
+.buy-stock .number{
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .24rem;
+    color: #999;
+    text-transform: uppercase;
+}
+.buy-stock .bs-right{
+    text-align: center;
+}
+.buy-stock .price{
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .4rem;
+    font-weight:bold;
+    margin-bottom: .1rem;
+}
+.buy-stock .arrow {
+    font-size: .4rem;
+    font-family: "iconfont"
+}
+.buy-stock .arrow::before{
+    content: '\e83c'
+}
+
+.buy-stock .green .arrow::before{
+    content: '\e83b'
+}
+.buy-stock .quotes{
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .3rem;
+}
+.buys{
+    padding: .24rem;
+}
+.buysTit{
+    height: .6rem;
+    line-height: .6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.buysTit .name{
+    font-size: .3rem;
+}
+.buysTit .times{
+    font-size: .26rem;
+}
+.buysTit .times .num{
+    height: .4rem;
+    min-width: .4rem;
+    border-radius:.4rem;
+    line-height: .4rem;
+    background: #ffedef;
+    padding: 0 .1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -1px .1rem 0;
+    font-weight:bold;
+}
+.buysAmount{
+    display: flex;
+    margin-right: -.2rem;
+    flex-wrap: wrap;
+}
+.buysAmount .item{
+    width: 33.33%;
+    padding: .2rem .2rem 0 0;
+}
+.buysAmount .tap{
+    height: .8rem;
+    line-height: .76rem;
+    border: #e7e8ea 1px solid;
+    border-radius:.1rem;
+    text-align: center;
+    font-size: .32rem;
+}
+.buysAmount .active .tap{
+    border-color:#fd0626;
+    background: #fd0626;
+    color: #fff;
+}
+.buysItem{
+    display: flex;
+    margin-top: .2rem;
+}
+.buysItem .name{
+    width: 30%;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .3rem;
+    flex-shrink: 0;
+}
+.buysItem .text{
+    width: 70%;
+    line-height: .6rem;
+    font-size: .3rem;
+}
+
+.buy-order{
+    height: 49px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    background: #3b4257;
+    color: #92999d;
+    font-size: .24rem;
+    display: flex;
+    box-shadow: 0px 1px 1rem rgba(59,66,87,.15);
+}
+.buy-order .texts{
+    width: 100%;
+    padding: 6px .24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    font-size: .24rem;
+}
+.buy-order .texts .amount{
+    height: .36rem;
+    line-height: .36rem;
+}
+.buy-order .texts .amount .red{
+    font-size: .3rem;
+}
+.buy-order .texts .balance{
+    height: .28rem;
+    line-height: .28rem;
+}
+
+.buy-order .btn-box{
+    width: 2.4rem;
+    flex-shrink: 0;
+}
+.buy-order .btn-box .btn{
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius:0;
+    font-size: .3rem;
+    display: block;
+    height: 100%;
+    line-height: 49px;
+}
+.buy-order~.rnui-content{
+    padding-bottom: 98px !important;
+}

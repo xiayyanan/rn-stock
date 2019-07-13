@@ -1,0 +1,102 @@
+.myCoupon {
+  margin: 0 0.24rem 0.24rem 0.24rem;
+}
+
+.myCoupon .item {
+  background: #fff;
+  margin-top: 0.24rem;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+.myCoupon .content {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myCoupon .bt {
+  line-height: 0.6rem;
+  font-size: 0.34rem;
+}
+.myCoupon .time .limit {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #62666d;
+}
+.myCoupon .time {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+  color: #92999d;
+}
+
+.myCoupon .value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 2rem;
+  padding: 0.3rem 0;
+  margin: -0.3rem 0;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.6rem;
+  background: #fd0626;
+  background-image: -webkit-linear-gradient(left, #ff8896, #fd0626);
+  background: linear-gradient(to right, #ff8896, #fd0626);
+}
+.myCoupon .value .unit {
+  font-size: 0.36rem;
+  margin-right: 0.1rem;
+}
+.myCoupon .money {
+  position: relative;
+  z-index: 2;
+}
+.myCoupon .status {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  z-index: 0;
+  left: -50%;
+  top: 50%;
+  margin-top: -0.6rem;
+}
+
+.myCoupon .value:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f7f8fa;
+  left: -5px;
+  top: -5px;
+  border-radius: 10px;
+}
+
+.myCoupon .value:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f7f8fa;
+  left: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+}
+
+.myCoupon .fail .value {
+  background: #d0cece;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #d0cece);
+  background: linear-gradient(to right, #f0f0f0, #d0cece);
+}

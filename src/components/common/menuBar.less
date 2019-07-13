@@ -1,0 +1,64 @@
+.menu-bar {
+	height: 40px;
+	background: #FFF;
+	width: 100%;
+	position: relative;
+	z-index: 19;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-bar:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #e5e8ea;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+}
+
+.menu-bar.active {
+	position: fixed;
+	top: 44px;
+}
+
+.menu-bar.active~.rnui-content {
+	padding-top: 84px;
+}
+
+.menu-bar .item {
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	font-size: 0;
+}
+
+.menu-bar .tap {
+	height: 40px;
+	line-height: 40px;
+	font-size: .28rem;
+	color: #535458;
+	display: inline-block;
+}
+
+.menu-bar .active .tap {
+	height: 40px;
+	font-weight: bold;
+	font-size: .3rem;
+	color: #25282a;
+}
+
+.menu-bar .active .tap:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3px;
+	background: #ff2741;
+}

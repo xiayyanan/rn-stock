@@ -1,0 +1,103 @@
+@import url("../../static/css/pub.less");
+.segmented{
+    padding: .24rem;
+}
+.settle-order .item{
+    background: #fff;
+    padding: .24rem;
+    position: relative;
+}
+.settle-order .item::after{
+    .bbline();
+}
+.settle-order .info{
+    display: flex;
+    justify-content: space-between;
+    font-size: .24rem;
+    padding:.2rem;
+    line-height: .36rem;
+    border-radius:3px;
+    margin-bottom: .24rem;
+    background: #f7f8fa;
+    color: #92999d;
+}
+
+.settle-order .hd{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.settle-order .stock{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .15rem 0;
+}
+
+.settle-order .name{
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .36rem;
+}
+.settle-order .code{
+    height: .32rem;
+    line-height: .32rem;
+    font-size: .26rem;
+    color: #999;
+    text-transform: uppercase; 
+}
+.settle-order .counts{
+    width: 60%;
+}
+.settle-order .price{
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .26rem;
+    color: #666;
+}
+.settle-order .amount{
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .24rem;
+    color: #999;
+}
+
+
+.settle-order .btn-box{
+    flex-shrink: 0;
+    width: 1.6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: .24rem;
+}
+.settle-order .btn-box .btns{
+    width: 100%;
+    height: .6rem;
+    font-size: .26rem;
+    line-height: .6rem;
+    color: #fd0626;
+    padding: 0;
+    
+}
+.settle-order .btn-box .btns::before{
+    border-color:#fd0626; 
+}
+
+.settle-detail{
+    padding: .24rem;
+}
+.settle-detail .item{
+    height: 1rem;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .28rem;
+    position: relative;
+}
+.settle-detail .item::after{
+    .bbline();
+}
+.settle-detail .item:last-child::after{
+    display: none;
+}

@@ -1,0 +1,43 @@
+.list-item {
+  position: relative;
+  background: #fff;
+}
+.list-item-tap {
+  display: flex;
+  height: 1rem;
+  padding: 0.24rem 0.2rem 0.24rem 0.3rem;
+}
+.list-item::after {
+  content: "";
+  height: 1px;
+  background: #e7e8ea;
+  transform: scaleY(0.5);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.list-item.active {
+  background: #f3f4f8;
+}
+.list-item-name {
+  height: 0.52rem;
+  line-height: 0.52rem;
+  font-size: 0.28rem;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-item .arrow {
+  font-size: 18px;
+  color: #c7c8ca;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list-item .arrow::after {
+  content: "\e7af";
+  font-family: "iconfont";
+}

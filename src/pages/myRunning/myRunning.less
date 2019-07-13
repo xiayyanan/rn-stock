@@ -1,0 +1,95 @@
+.running-time {
+    padding: .24rem;
+    background: #f6f6f6;
+    position: sticky;
+    top: 44px;
+    z-index: 10;
+}
+
+.running-time .date {
+    font-size: .3rem;
+    line-height: .36rem;
+    margin-top: .06rem;
+}
+
+.running-time .info {
+    font-size: .24rem;
+    line-height: .3rem;
+    color: #b2b2b2;
+    margin-top: .08rem;
+}
+
+.running-list {
+    background: #FFF;
+    position: relative;
+}
+
+.running-list .itemsub {
+    padding: .3rem;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.running-list .itemsub:after {
+    content: '';
+    position: absolute;
+    left: .3rem;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #e5e8ea;
+    transform: scaleY(0.5);
+}
+
+.running-list .itemsub:last-child:after {
+    display: none;
+}
+
+.running-list .flag {
+    width: .84rem;
+    margin-right: .3rem;
+    flex-shrink: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.running-list .flag img {
+    width: 100%;
+    border-radius: .84rem;
+}
+
+.running-list .content {
+    width: 100%;
+}
+
+.running-list .hd {
+    height: .48rem;
+    line-height: .48rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.running-list .name {
+    width: 100%;
+    font-size: .28rem;
+    overflow: hidden;
+}
+
+.running-list .value {
+    font-size: .36rem;
+    flex-shrink: 0;
+    margin-left: .18rem;
+}
+
+.running-list .time {
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .24rem;
+    margin-top: .12rem;
+    color: #92999D;
+}

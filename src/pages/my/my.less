@@ -1,0 +1,242 @@
+@import url("../../static/css/pub.less");
+.h-message {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-family: "iconfont";
+  font-size: 21px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.h-message::before {
+  content: "\e80d";
+}
+
+.my-top-bg {
+  background: #fd0626;
+  margin-top: -44px;
+  padding-top: 44px;
+}
+
+.my-top {
+  margin: 0.4rem;
+  padding: 0.4rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 1px 0.4rem rgba(59, 66, 87, 0.25);
+  border-radius: 0.1rem;
+  position: relative;
+}
+.my-top::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: rgba(255, 255, 255, 0.25) 1px solid;
+  border-radius: 0.2rem;
+  transform: scale(0.5);
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  box-sizing: border-box;
+}
+.my-info {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.my-info .avatar {
+  flex-shrink: 0;
+  width: 0.96rem;
+  height: 0.96rem;
+  margin-right: 0.3rem;
+  border-radius: 0.96rem;
+  box-shadow: 0px 1px 0.4rem rgba(59, 66, 87, 0.25);
+}
+.my-info .avatar img {
+  width: 0.96rem;
+  height: 0.96rem;
+  border-radius: 0.96rem;
+}
+
+.my-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.03rem 0;
+}
+.my-info .name {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.34rem;
+  color: #fff;
+}
+.my-info .ident {
+  height: 0.4rem;
+}
+.my-info .labels {
+  display: inline-block;
+  height: 0.4rem;
+  line-height: 0.38rem;
+  padding: 0 0.2rem;
+  border: rgba(255, 255, 255, 0.5) 1px solid;
+  border-radius: 0.36rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.my-info .labels.arrow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  margin-left: 0.1rem;
+  display: inline-block;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid rgba(255, 255, 255, 0.75);
+}
+
+.my-info .labels.yes::after {
+  line-height: 1;
+  font-family: "iconfont";
+  content: "\e822";
+  margin-left: 0.1rem;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.24rem;
+}
+
+.goset {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.3rem;
+  font-size: 0.28rem;
+  color: #835c5d;
+  padding: 0 0.2rem 0 0.3rem;
+  background-image: -webkit-linear-gradient(180deg, #e0c3c7 0%, #d2b2b5 100%);
+  border-radius: 0.8rem;
+  font-family: "iconfont";
+}
+.goset:after {
+  content: "\e7af";
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.my-counts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0 0;
+  margin: 0 -0.3rem;
+  position: relative;
+  z-index: 3;
+}
+.my-counts .item {
+  width: 100%;
+  text-align: center;
+}
+.my-counts .tap {
+  color: #fff;
+}
+.my-counts .name {
+  font-size: 0.24rem;
+  line-height: 1;
+  margin-top: 0.15rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.my-counts .value {
+  font-size: 0.36rem;
+  line-height: 1;
+}
+
+.user-nav {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.2rem 0.2rem 0.5rem;
+}
+
+.user-nav .item {
+  width: 25%;
+}
+
+.user-nav .tap {
+  text-align: center;
+}
+
+.user-nav .img-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0 auto;
+}
+
+.user-nav .name {
+  display: block;
+  font-size: 0.24rem;
+  line-height: 1;
+  margin-top: 0.2rem;
+  color: #fff;
+}
+.my-nav{
+  padding: .2rem .4rem;
+}
+.my-nav .item{
+  margin-top: .2rem;
+}
+.nav-item {
+  height: 1.2rem;
+  position: relative;
+  background: #fff;
+  border-radius: 0.15rem;
+}
+.nav-item .tap {
+  display: flex;
+  padding: 0.24rem 0.2rem 0.24rem .3rem;
+}
+.nav-item::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: #e7e8ea 1px solid;
+  border-radius: 0.15rem;
+  transform: scale(0.5);
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  box-sizing: border-box;
+}
+.nav-item.active {
+  background: #f3f4f8;
+}
+.nav-item .name {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.34rem;
+  font-weight: bold;
+  z-index: 2;
+  width: 100%;
+}
+.nav-item .arrow {
+  font-size: 18px;
+  color: #c7c8ca;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-item .arrow::after {
+  content: "\e7af";
+  font-family: "iconfont";
+}
+
+.hotline{
+  text-align: center;
+  margin-top: .3rem;
+}
